@@ -181,9 +181,9 @@ public:
     }
 
     bool isInJList(int idj) {
-        it = getJobFromId(idj);
+       list<job>::iterator it = getJobFromId(idj);
 
-        if (it = jobs.end())
+        if (it == jobs.end())
             return false;
         return true;
 
